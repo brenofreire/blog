@@ -24,7 +24,7 @@ const config: Config = {
         textBase: "#333",
         foreground: "hsl(var(--foreground))",
         card: {
-          DEFAULT: "hsl(var(--card))",
+          DEFAULT: "#FCF6EC",
           foreground: "hsl(var(--card-foreground))",
         },
         popover: {

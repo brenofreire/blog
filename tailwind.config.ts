@@ -64,7 +64,7 @@ const config: Config = {
       },
       maxWidth: {
         viewport: "1440px",
-        insideView: "1280px",
+        inside: "1280px",
       },
     },
   },

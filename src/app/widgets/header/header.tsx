@@ -4,6 +4,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { HomeIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -17,9 +19,13 @@ export default function Header() {
           <div></div>
           <div className="hidden md:flex">
             <NavigationMenuItem>
-              <NavigationMenuLink className="border-b-8 border-textBase bg-primary h-20 flex items-center px-20 border-r border-l">
+              <Link
+                className="border-b-8 border-textBase bg-primary h-20 flex items-center px-20 border-r border-l flex gap-2"
+                href="/"
+              >
+                <HomeIcon />
                 home
-              </NavigationMenuLink>
+              </Link>
             </NavigationMenuItem>
           </div>
           <div></div>

@@ -23,6 +23,7 @@ const config: Config = {
         background: "#CECFC5",
         textBase: "#333",
         foreground: "hsl(var(--foreground))",
+        textClear: "#C5CFCC",
         card: {
           DEFAULT: "#FCF6EC",
           foreground: "hsl(var(--card-foreground))",

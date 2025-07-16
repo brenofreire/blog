@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 160 30% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 160 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 15%;
+    --primary: 35 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 140 25% 70%;
+    --secondary-foreground: 160 30% 15%;
+    --muted: 140 15% 85%;
+    --muted-foreground: 160 20% 40%;
+    --accent: 120 30% 80%;
+    --accent-foreground: 160 30% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 140 20% 85%;
+    --input: 0 0% 100%;
+    --ring: 35 85% 65%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 160 40% 8%;
+    --foreground: 40 20% 92%;
+    --card: 160 35% 12%;
+    --card-foreground: 40 20% 92%;
+    --popover: 160 35% 12%;
+    --popover-foreground: 40 20% 92%;
+    --primary: 35 85% 65%;
+    --primary-foreground: 160 40% 8%;
+    --secondary: 140 25% 60%;
+    --secondary-foreground: 160 40% 8%;
+    --muted: 160 25% 20%;
+    --muted-foreground: 140 20% 70%;
+    --accent: 120 25% 25%;
+    --accent-foreground: 40 20% 92%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 160 25% 20%;
+    --input: 160 35% 12%;
+    --ring: 35 85% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom pastel organic styles */
+.organic-badge {
+  @apply bg-sage-soft text-forest-deep border-2 border-peach-warm rounded-full px-4 py-2 font-medium;
+}
+
+.organic-card {
+  @apply bg-card border-2 border-sage-light rounded-2xl shadow-soft;
+}
+
+.golden-button {
+  @apply bg-peach-warm hover:bg-peach-deep text-white font-semibold rounded-full transition-all duration-300 shadow-warm;
+}
+
+.script-text {
+  font-family: var(--font-dancing-script), cursive;
+}
+
+.organic-text {
+  font-family: var(--font-comfortaa), sans-serif;
+}
+
+/* Pastel background gradients */
+.pastel-bg {
+  background: linear-gradient(135deg, hsl(160, 25%, 92%) 0%, hsl(140, 20%, 95%) 50%, hsl(35, 30%, 96%) 100%);
+}
+
+.dark .pastel-bg {
+  background: linear-gradient(135deg, hsl(160, 40%, 8%) 0%, hsl(160, 35%, 10%) 50%, hsl(160, 30%, 12%) 100%);
+}
